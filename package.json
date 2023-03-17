@@ -1,0 +1,20 @@
+{
+  "name": "third-try-from-scratch",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon ./index.js"
+  },
+  "author": "Rami",
+  "license": "ISC",
+  "devDependencies": {
+    "express": "^4.18.2",
+    "nodemon": "^2.0.20"
+  },
+  "dependencies": {
+    "browser-sync": "^2.27.11",
+    "mongodb": "^5.0.1",
+    "pug": "^3.0.2"
+  }
+}

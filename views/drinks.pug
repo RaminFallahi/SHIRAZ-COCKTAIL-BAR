@@ -1,0 +1,31 @@
+extends layout 
+
+block append scripts 
+  script(src="/drinks.js")
+  link(rel="stylesheet", href="styles-drinks.css", type="text/css")
+
+
+block main-content 
+  h1.page-title #{title}
+  div.main-container
+    each drink in menuDrinks 
+      div.classOfDrinksInfo
+        p #{drink.name}
+        p #{drink.Description }
+        p #{drink.ingredient}
+        p #{drink.price}
+      div.classOfDrinksImg
+        img(src="/images/" + drink.img)
+        
+
+  //- p ingredient: dried rose, honey, lemon juice, vodka, raspberry. Description: delicate flavor, refreshing, good for summer.
+  //- img(src="/images/khakshir.jpg", alt='online menu')
+
+  //- p ingredient honey, mint, vinegar, lemon juice, vodka, cucumber. Description: sweet, refreshing, good for hot day.
+  //- img(src="/images/sekanjabin.jpg", alt='online menu')
+
+  //- p ingredient saffron, honey, lemon juice, gin, cinnamon. Description: smooth flavor, aroma, good for winter.
+  //- img(src="/images/saffron.png", alt='online menu')
+
+  //https://www.pinterest.it/pin/465489311487465163/?amp_client_id=CLIENT_ID%28_%29&mweb_unauth_id=%7B%7Bdefault.session%7D%7D&simplified=true
+  //http://persianfoodtours.com/persian-drinks/

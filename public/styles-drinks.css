@@ -1,0 +1,43 @@
+img {
+  margin: 0 auto;
+  width: 100%;
+  height: 100%;
+  transition: 4s ease-in-out 1s;
+}
+img:hover {
+  transform: scale(1.1);
+  filter: brightness(130%);
+  /* will increase the brightness of the img will the mouse is hover on. */
+}
+.classOfDrinksInfo {
+  background-color: rgb(215, 215, 215);
+  margin-left: 20px;
+  padding: 10px;
+  display: flex;
+}
+.classOfDrinksImg {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.main-container {
+  display: flex;
+  min-height: 40vh;
+}
+.main-container > div {
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+}
+/* @media screen and (max-width: 768px) {
+  .main-container {
+    grid-template-columns: 1fr;
+  }
+}
+@media screen and (max-width: 320px) {
+  .main-container {
+    grid-template-columns: 1fr;
+  }
+} */
